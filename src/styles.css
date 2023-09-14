@@ -1,0 +1,146 @@
+.app {
+  display: flex;
+  flex-direction: row;
+}
+
+/* sidebar styling */
+
+.sidebar {
+  width: 25%;
+  height: 100vh;
+  background-color: #1e1e1e;
+  padding: 40px 25px;
+  box-shadow: 0px 0px 70px 1px rgba(121, 116, 204, 0.2);
+  z-index: 1;
+}
+
+.title-small {
+  color: #fff;
+  margin-bottom: 25px;
+  transition: padding-left 400ms ease-out;
+}
+
+.title-small:hover {
+  padding-left: 15px;
+}
+
+.logo {
+  color: #fff;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.title-small button {
+  margin-left: 10px;
+}
+
+/* content styling */
+.content {
+  width: 100%;
+  background-color: #1e1e1e;
+}
+
+/* poster styling */
+.poster {
+  background-image: linear-gradient(
+      rgba(36, 36, 36, 0.2),
+      rgba(36, 36, 36, 0.5)
+    ),
+    url("./img/poster.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+  color: #fff;
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-item {
+  margin-right: 35px;
+  cursor: pointer;
+}
+
+.poster-info {
+  padding: 40px;
+}
+
+.poster-title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.poster-details {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.btn-main {
+    color: #fff;
+  padding: 10px 20px;
+  border-radius: 14px;
+  background: #4c4cae;
+  margin-right: 15px;
+  transition: background 200ms ease-in-out;
+}
+
+.btn-main:hover {
+      background: #6161dc;
+}
+
+.like {
+    color:#4c4cae;
+    padding: 10px;
+    background: #fff;
+    border-radius: 14px;
+}
+
+.trending {
+    padding: 20px 40px;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.card {
+    margin-top: 20px;
+    width: 210px;
+    height: 260px;
+    border-radius: 20px;
+    background: url('./img/barbie.png');
+    background-size: cover;
+    position: relative;
+}
+
+.card-info {
+    width: 210px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.59);
+    backdrop-filter: blur(5px);
+    border-radius: 0px 0px 20px 20px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 16px;
+}
+
+.card-title{
+    color: #1e1e1e;
+    font-weight: 600;
+}
+
+.card-details {
+    color: #1e1e1e;
+     font-size: 14px;
+}
