@@ -1,11 +1,17 @@
 import Poster from "./Poster";
-import Trending from "./Trending";
+import TrendingList from "./TrendingList";
+import ComingList from "./ComingList";
+import ShowsList from "./ShowsList";
+import MoviesList from "./MoviesList";
 
 function Content() {
   return (
     <div className="content">
-          <Poster />
-          <Trending/>
+      <Poster />
+      <TrendingList />
+      <ComingList />
+      <MoviesList />
+      <ShowsList />
     </div>
   );
 }

@@ -8,7 +8,7 @@ function PosterInfo() {
       <div className="btn-container">
         <button className="btn-main">Watch Now</button>
         <button className="like">
-          <FavoriteBorderOutlinedIcon fontSize="small" />
+          <FavoriteBorderOutlinedIcon fontSize="medium" />
         </button>
       </div>
     </div>

@@ -73,6 +73,7 @@ h2 {
   width: 100%;
   margin-left: 300px;
   background-color: #1e1e1e;
+  overflow: hidden;
 }
 
 /* poster styling */
@@ -151,7 +152,7 @@ h2 {
   border-radius: 12px;
 }
 
-.trending {
+.trending, .coming {
   padding: 20px 40px;
   color: #fff;
   text-transform: capitalize;
@@ -165,8 +166,8 @@ h2 {
 
 .card {
   margin-top: 20px;
-  width: 210px;
-  height: 260px;
+  width: 190px;
+  height: 230px;
   border-radius: 20px;
   background: url("./img/barbie.png");
   background-size: cover;
@@ -175,12 +176,20 @@ h2 {
 
 .card-info {
   width: -webkit-fill-available;
-  background-color: rgba(255, 255, 255, 0.59);
-  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(3px);
   border-radius: 0px 0px 20px 20px;
   position: absolute;
   bottom: 0;
   padding: 15px 16px;
+  transform: translateY(15%);
+  transition: transform 500ms ease-in-out;
+  opacity: 0;
+}
+
+.card:hover .card-info {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .card-title {
@@ -191,10 +200,20 @@ h2 {
 
 .card-details {
   color: #1e1e1e;
-  font-size: 14px;
+  font-size: 12px;
 }
 
-.card-list {
-  display: flex;
-  gap: 25px;
+.movie-list-container {
+  width: 100%;
+  overflow-x: auto;
+   overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.movie-list {
+  display: inline-flex;
+  gap: 20px;
+  list-style: none;
 }
