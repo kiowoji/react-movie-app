@@ -1,12 +1,19 @@
 import Card from "./Card"
 
 function Trending() {
-    return <div className="trending">
+    return (
+      <div className="trending">
         <h2 className="title">Trending now</h2>
-        <ul>
-            <li><Card/></li>
+        <ul className="card-list">
+          <li>
+            <Card />
+          </li>
+          <li>
+            <Card />
+          </li>
         </ul>
-    </div>
+      </div>
+    );
 }
 
 export default Trending

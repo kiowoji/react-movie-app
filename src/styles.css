@@ -1,3 +1,31 @@
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+button {
+  padding: 0;
+  background-color: inherit;
+  border: none;
+  color: #fff;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
 .app {
   display: flex;
   flex-direction: row;
@@ -6,18 +34,23 @@
 /* sidebar styling */
 
 .sidebar {
-  width: 25%;
+  width: 250px;
   height: 100vh;
   background-color: #1e1e1e;
   padding: 40px 25px;
   box-shadow: 0px 0px 70px 1px rgba(121, 116, 204, 0.2);
+  position: fixed;
   z-index: 1;
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden;
 }
 
 .title-small {
   color: #fff;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   transition: padding-left 400ms ease-out;
+  display: flex;
 }
 
 .title-small:hover {
@@ -26,7 +59,7 @@
 
 .logo {
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -38,6 +71,7 @@
 /* content styling */
 .content {
   width: 100%;
+  margin-left: 300px;
   background-color: #1e1e1e;
 }
 
@@ -57,7 +91,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 40px;
+  padding: 30px 40px;
   color: #fff;
 }
 
@@ -71,76 +105,96 @@
   cursor: pointer;
 }
 
+.header-item:hover {
+  color: #dcdcdc;
+}
+
 .poster-info {
-  padding: 40px;
+  padding: 20px 40px;
 }
 
 .poster-title {
   color: #fff;
   font-size: 48px;
   font-weight: 600;
-  margin-bottom: 15px;
 }
 
 .poster-details {
   color: #fff;
   font-size: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
 }
 
 .btn-main {
-    color: #fff;
+  color: #fff;
   padding: 10px 20px;
-  border-radius: 14px;
+  border-radius: 12px;
   background: #4c4cae;
   margin-right: 15px;
   transition: background 200ms ease-in-out;
 }
 
 .btn-main:hover {
-      background: #6161dc;
+  background: #6161dc;
 }
 
 .like {
-    color:#4c4cae;
-    padding: 10px;
-    background: #fff;
-    border-radius: 14px;
+  color: #4c4cae;
+  display: inline-flex;
+  padding: 10px;
+  background: #fff;
+  border-radius: 12px;
 }
 
 .trending {
-    padding: 20px 40px;
-    color: #fff;
-    text-transform: capitalize;
+  padding: 20px 40px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
 .card {
-    margin-top: 20px;
-    width: 210px;
-    height: 260px;
-    border-radius: 20px;
-    background: url('./img/barbie.png');
-    background-size: cover;
-    position: relative;
+  margin-top: 20px;
+  width: 210px;
+  height: 260px;
+  border-radius: 20px;
+  background: url("./img/barbie.png");
+  background-size: cover;
+  position: relative;
 }
 
 .card-info {
-    width: 210px;
-    height: 70px;
-    background-color: rgba(255, 255, 255, 0.59);
-    backdrop-filter: blur(5px);
-    border-radius: 0px 0px 20px 20px;
-    position: absolute;
-    bottom: 0;
-    padding: 10px 16px;
+  width: -webkit-fill-available;
+  background-color: rgba(255, 255, 255, 0.59);
+  backdrop-filter: blur(5px);
+  border-radius: 0px 0px 20px 20px;
+  position: absolute;
+  bottom: 0;
+  padding: 15px 16px;
 }
 
-.card-title{
-    color: #1e1e1e;
-    font-weight: 600;
+.card-title {
+  color: #1e1e1e;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 .card-details {
-    color: #1e1e1e;
-     font-size: 14px;
+  color: #1e1e1e;
+  font-size: 14px;
+}
+
+.card-list {
+  display: flex;
+  gap: 25px;
 }
