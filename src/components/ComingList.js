@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { useLocation } from "react-router-dom";
 import Card from "./Card";
 
 const ComingList = () => {
+  const location = useLocation();
+
   const [upcomingMovies, setUpcomingMovies] = useState([]);
 
   useEffect(() => {
@@ -19,10 +22,14 @@ const ComingList = () => {
   }, []);
 
   return (
-    <div className="coming">
+    <div className="container">
       <h2 className="title">Coming Soon</h2>
       <div className="movie-list-container">
-        <div className="movie-list">
+        <div
+          className={`movie-list ${
+            location.pathname === "/coming-soon" ? "wrap" : "scroll"
+          }`}
+        >
           {upcomingMovies.map((movie) => (
             <Card key={movie.id} movie={movie} />
           ))}

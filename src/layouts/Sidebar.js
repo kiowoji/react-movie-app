@@ -1,28 +1,41 @@
 import MovieFilterOutlinedIcon from "@mui/icons-material/MovieFilterOutlined";
-import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import CalendarMonthOutlinedIcon from "@mui/icons-material/CalendarMonthOutlined";
 import TrendingUpOutlinedIcon from "@mui/icons-material/TrendingUpOutlined";
+import {  Link } from "react-router-dom";
 
 function Sidebar() {
   return (
     <div className="sidebar">
-      <div className="logo">Cinerly</div>
+      <div className="logo-container">
+        <Link to="/" className="logo">
+          Cinerly
+        </Link>
+      </div>
       <ul>
         <li className="title-small">
           <MovieFilterOutlinedIcon />
-          <button>Home</button>
+          <Link to="/" className="sidebar-link">
+            Home
+          </Link>
         </li>
         <li className="title-small">
           <TrendingUpOutlinedIcon />
-          <button>Trending</button>
+          <Link to="/trending" className="sidebar-link">
+            Trending
+          </Link>
         </li>
         <li className="title-small">
           <CalendarMonthOutlinedIcon />
-          <button>Coming soon</button>
+          <Link to="/coming-soon" className="sidebar-link">
+            Coming soon
+          </Link>
         </li>
         <li className="title-small">
-          <FavoriteBorderOutlinedIcon />
-          <button>Favourites</button>
+          <SearchOutlinedIcon /> 
+          <Link to="/search" className="sidebar-link">
+            Search
+          </Link>
         </li>
       </ul>
     </div>

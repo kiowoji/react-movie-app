@@ -3,8 +3,9 @@ import TrendingList from "./TrendingList";
 import ComingList from "./ComingList";
 import ShowsList from "./ShowsList";
 import MoviesList from "./MoviesList";
+import Footer from "../layouts/Footer";
 
-function Content() {
+function ContentHome() {
   return (
     <div className="content">
       <Poster />
@@ -12,8 +13,9 @@ function Content() {
       <ComingList />
       <MoviesList />
       <ShowsList />
+      <Footer/>
     </div>
   );
 }
 
-export default Content;
+export default ContentHome;

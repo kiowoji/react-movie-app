@@ -19,7 +19,7 @@ const ShowsList = () => {
   }, []);
 
   return (
-    <div className="coming">
+    <div className="container">
       <h2 className="title">TV Shows</h2>
       <div className="movie-list-container">
         <div className="movie-list">

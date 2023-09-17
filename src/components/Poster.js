@@ -1,4 +1,4 @@
-import Header from './Header';
+import Header from '../layouts/Header';
 import PosterInfo from './PosterInfo';
 
 function Poster() {

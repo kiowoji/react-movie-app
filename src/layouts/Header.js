@@ -1,4 +1,5 @@
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -8,7 +9,9 @@ function Header() {
         <li className="header-item">TV Shows</li>
         <li className="header-item">Anime</li>
       </ul>
-      <SearchOutlinedIcon />
+      <Link to="/search" className="sidebar-link">
+          <SearchOutlinedIcon />
+      </Link>
     </div>
   );
 }
