@@ -99,17 +99,20 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   padding: 30px 40px;
-  color: #fff;
 }
 
-.header ul {
+.header ul,
+.flex-row {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .header-item {
+  color: #fff;
   margin-right: 35px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .header-item:hover {
@@ -168,6 +171,22 @@ h2 {
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0.5px;
+  position: relative;
+  background-color: #1e1e1e;
+  z-index: 3;
+}
+
+.explore {
+  padding-left: 10px;
+  color: #acacff;
+  text-decoration: none;
+  font-size: 18px;
+  transform: translateX(-100%); 
+  transition: transform 0.5s ease-in-out;
+}
+
+.flex-row:hover .explore {
+   transform: translateX(0); 
 }
 
 /*card styling*/

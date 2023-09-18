@@ -1,18 +1,18 @@
 import Poster from "./Poster";
-import TrendingList from "./TrendingList";
-import ComingList from "./ComingList";
-import ShowsList from "./ShowsList";
-import MoviesList from "./MoviesList";
+import TrendingMovies from "./TrendingMovies";
+import UpcomingMovies from "./UpcomingMovies";
+import PopularMovies  from "./PopularMovies";
 import Footer from "../layouts/Footer";
+import TopShows from "./TopShows";
 
 function ContentHome() {
   return (
     <div className="content">
       <Poster />
-      <TrendingList />
-      <ComingList />
-      <MoviesList />
-      <ShowsList />
+      <TrendingMovies />
+      <UpcomingMovies />
+      <PopularMovies />
+      <TopShows />
       <Footer/>
     </div>
   );

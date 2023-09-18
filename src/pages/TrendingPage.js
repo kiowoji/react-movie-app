@@ -1,6 +1,6 @@
 import Sidebar from "../layouts/Sidebar";
 import Header from "../layouts/Header";
-import TrendingList from "../components/TrendingList";
+import TrendingMovies from "../components/TrendingMovies";
 import Footer from "../layouts/Footer";
 
 function TrendingPage() {
@@ -9,7 +9,7 @@ function TrendingPage() {
         <Sidebar />
         <div className="content">
           <Header />
-          <TrendingList />
+          <TrendingMovies/>
           <Footer/>
         </div>
       </>

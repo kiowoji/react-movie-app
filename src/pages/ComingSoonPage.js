@@ -1,5 +1,5 @@
 import Sidebar from "../layouts/Sidebar";
-import ComingList from "../components/ComingList";
+import UpcomingMovies from "../components/UpcomingMovies";
 import Header from "../layouts/Header";
 import Footer from "../layouts/Footer";
 
@@ -8,7 +8,7 @@ function ComingSoonPage() {
     <Sidebar />
     <div className="content">
       <Header/>
-      <ComingList />
+      <UpcomingMovies/>
       <Footer/>
     </div>
   </>;

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import Card from "./Card";
 
-function Trending() {
+function TrendingMovies() {
   const location = useLocation();
   const [movies, setMovies] = useState([]);
   useEffect(() => {
@@ -20,7 +21,11 @@ function Trending() {
   }, []);
   return (
     <div className="container">
-      <h2 className="title">Trending now</h2>
+      <div className="flex-row">
+        <h2 className="title">Trending now</h2>
+        <Link to="/trending" className="explore"> - explore all</Link>
+      </div>
+
       <div className="movie-list-container">
         <ul
           className={`movie-list ${
@@ -36,4 +41,4 @@ function Trending() {
   );
 }
 
-export default Trending;
+export default TrendingMovies;

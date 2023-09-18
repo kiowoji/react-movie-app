@@ -5,9 +5,8 @@ function Header() {
   return (
     <div className="header">
       <ul>
-        <li className="header-item">Movies</li>
-        <li className="header-item">TV Shows</li>
-        <li className="header-item">Anime</li>
+        <Link to="/movies" className="header-item">Movies</Link>
+        <Link to="/tv-shows" className="header-item">TV Shows</Link>
       </ul>
       <Link to="/search" className="sidebar-link">
           <SearchOutlinedIcon />

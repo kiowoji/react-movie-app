@@ -5,6 +5,8 @@ import HomePage from "./pages/HomePage";
 import TrendingPage from "./pages/TrendingPage";
 import SearchPage from "./pages/SearchPage";
 import ComingSoonPage from "./pages/ComingSoonPage";
+import MoviesPage from "./pages/MoviesPage";
+import ShowsPage from "./pages/ShowsPage";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/trending" element={<TrendingPage />} />
           <Route path="/search" element={<SearchPage />} />
           <Route path="/coming-soon" element={<ComingSoonPage />} />
+          <Route path="/movies" element={<MoviesPage />} />
+          <Route path="/tv-shows" element={<ShowsPage/>} />
         </Routes>
       </div>
     </Router>
