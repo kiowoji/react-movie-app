@@ -194,7 +194,7 @@ h2 {
 .card {
   margin-top: 20px;
   width: 190px;
-  height: 230px;
+  height: 260px;
   border-radius: 20px;
   background: url("./assets/barbie.png");
   background-size: cover;
@@ -282,3 +282,63 @@ h2 {
   color: #acacff;
   text-decoration: none;
 }
+
+/*modal styling*/
+
+.dark-screen{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(30, 30, 30, 0.7);
+  top: 0;
+  left: 0;
+}
+
+.modal{
+  width: 800px;
+  height: 400px;
+  border-radius: 16px;
+  padding: 50px;
+  background: linear-gradient(0deg, rgba(118,118,173,1) 7%, rgba(50,50,111,1) 100%);
+  position: fixed;
+  z-index: 5;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.close-btn{
+  color: #fafafa;
+}
+
+.modal-img{
+  border-radius: 9px;
+  margin-right: 20px;
+}
+
+.modal-info{
+  padding-top: 10px;
+}
+
+.modal-title{
+  font-size: 24px;
+}
+
+.rate-container{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.modal-rate{
+  font-size: 20px;
+  font-weight: 600;
+  color: #c5c5ff;
+}
+
+.rate-icon{
+  color: gold;
+}
+
